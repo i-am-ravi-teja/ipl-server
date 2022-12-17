@@ -4,7 +4,7 @@ const { response } = require("express");
 
 const app = express();
 app.use(cors());
-app.use(bodyParser.json());
+app.use(express.json());
 app.get("/ipl", (request, response) => {
   response.send({
     teams: [
